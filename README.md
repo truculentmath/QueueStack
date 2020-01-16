@@ -7,7 +7,10 @@ Code started with several Mathematica Stackexchange answers:
 - (Carl Woll)	https://mathematica.stackexchange.com/questions/198341/implementing-core-data-structures/198345 
 - (Carl Woll)	https://mathematica.stackexchange.com/questions/151948/remove-element-from-list-and-store-it-in-variable
 - (Leonid Shifrin) https://mathematica.stackexchange.com/questions/24988/can-one-identify-the-design-patterns-of-mathematica/25474#25474
-but polished up by me and made more robust.
+
+I gave the two (queues and stacks) a common syntax and behavior when empty, added a Select function and a Peek function, and made the data structure hidden.
+
+The ID for a stack or queue can be any Mathematica object, but I've only tested Integer and String objects. A stack with ID "primes" is a different object than a queue with ID "primes"; you can have both and they will not interact.
 
 ## Example Usage
 ```
