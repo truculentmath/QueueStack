@@ -3,13 +3,16 @@ Queue and Stack implementation for Mathematica
 
 I'm an academic, so if you use this for anything, please let me know so that I can add it to my resume.
 
-Code started with Carl Woll's answers:
-	https://mathematica.stackexchange.com/questions/198341/implementing-core-data-structures/198345 
-	https://mathematica.stackexchange.com/questions/151948/remove-element-from-list-and-store-it-in-variable
-but polished up and made more robust.
+Code started with several Mathematica Stackexchange answers:
+- (Carl Woll)	https://mathematica.stackexchange.com/questions/198341/implementing-core-data-structures/198345 
+- (Carl Woll)	https://mathematica.stackexchange.com/questions/151948/remove-element-from-list-and-store-it-in-variable
+- (Leonid Shifrin) https://mathematica.stackexchange.com/questions/24988/can-one-identify-the-design-patterns-of-mathematica/25474#25474
+but polished up by me and made more robust.
 
+## Example Usage
+```
 (* To load the package *)
-  << QueueStack`
+<< QueueStack`
 
 (* Add 120000 primes to a queue in about a second *)
 (* Queues are represented as Association[] internally, but the user doesn't need to know that *)
@@ -45,3 +48,4 @@ StackList["a few"]
 StackClear[{"primes", "1mod4", "a few"}]
 
 (* Notice that QueueSelect preserves the order in the queue, while StackSelect reverses the order. *)
+```
