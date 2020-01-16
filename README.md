@@ -1,7 +1,19 @@
 # QueueStack
 Queue and Stack implementation for Mathematica
 
+## Metadata
+      Author: Kevin O'Bryant
+      Date:   January 16, 2020
+      License:GNU GPLv3. Feel free to use and reuse however, noncommercially, but I'd appreciate a citation if you have one to give. And prior permission for commercial use, please.
+
 I'm an academic, so if you use this for anything, please let me know so that I can add it to my resume.
+
+## Getting Started
+Put QueueStack.wl in the directory FileNameJoin[{$UserBaseDirectory, "Applications"}]
+
+Use "<< QueueStack`" (without the double-quotes, but with the backward quote) to load the package.
+
+## Origin Story
 
 Code started with several Mathematica Stackexchange answers:
 - (Carl Woll)	https://mathematica.stackexchange.com/questions/198341/implementing-core-data-structures/198345 
